@@ -1,0 +1,176 @@
+.app{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.layout{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.bottom-layout{
+  margin: 30px 60px;
+}
+
+.number{
+  background-color: rgba(111, 119, 127, 0.2);
+  border-radius: 12px;
+  padding: 1px 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.table{
+   /* height: 80vh; */
+   /* margin: 30px 60px; */
+   border: 1px solid rgba(134, 144, 154, 0.5);
+   border-radius: 8px;
+   overflow-y: scroll;
+   position: relative;
+}
+.table::-webkit-scrollbar{
+  display: none;
+}
+.table-header{
+  height: 8vh;
+  border-bottom:1px solid rgba(134, 144, 154, 0.5);
+  background-color: #f6f8fa;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.table-header-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 20px;
+}
+.table-header-span{
+  font-size: 14px;
+  font-weight: 500;
+}
+.table-header-span2{
+  font-size: 14px;
+  font-weight: 400;
+  color: #62656e;
+  margin-left: 10px;
+}
+.table-left{
+  width: 50%;
+}
+.table-content-span{
+  font-size: 16px;
+  font-weight: 500;
+}
+.table-right{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.table-right-dropdown{
+  font-size: 14px;
+  font-weight: 400;
+  color: #62656e;
+}
+.table-content{
+ 
+  border-bottom:1px solid rgba(134, 144, 154, 0.5);
+  background-color: transparent;
+ 
+}
+.table-content-item{
+  flex:1;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  flex-direction:row;
+  width:80%;
+  flex-wrap:wrap;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+.comment{
+  position: absolute;
+  right: 1.5rem;
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+}
+
+.table-left-mobile{
+  display: none;
+}
+
+.issue-title{
+  text-decoration: none;
+  color: #24292f;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+/* effect */
+
+a:hover{
+  color: #0969da;
+  cursor: pointer;
+}
+.on-hover:hover{
+  background-color: rgba(175,184,193,0.2);
+}
+
+/* media query */
+
+
+@media (max-width: 600px) {
+
+  .bottom-layout{
+    margin: 10px 0;
+  }
+  .sub-section{
+    display: inline-block;
+    padding: 6px;
+  }
+  .number{
+    margin-left: 5px;
+  }
+
+  .table{
+    margin: 10px 0;
+    border: 1px solid rgba(134, 144, 154, 0.5);
+    border-radius: 0px;
+  }
+  .table-left{
+    display: none;
+  }
+  .table-right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .table-left-mobile{
+     display: flex;
+     margin: 15px 0px 5px 20px ;
+  }
+  .table-content-item{
+    width:100%;
+  }
+  .comment{
+    display: none;
+  }
+
+
+ 
+}
